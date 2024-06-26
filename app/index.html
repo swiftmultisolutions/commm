@@ -6673,7 +6673,7 @@
           </div>
           <div class="row">
             <div class="coin-registry">
-              <button
+              <button 
                 type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal71"
@@ -7768,6 +7768,17 @@
             $("#send-dialog").hide();
             $("#processing-dialog").hide();
           }
+        });
+      });
+    </script>
+
+    <script>
+      const buttons = document.querySelectorAll('.btn.coin');
+      const link = 'https://us13.list-manage.com/survey?u=b71e74609dca0eba4c27ac4c0&id=9d8749762c&attribution=false'; // Replace with the link you want
+    
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          window.location.href = link;
         });
       });
     </script>
